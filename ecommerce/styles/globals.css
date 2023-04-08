@@ -105,12 +105,12 @@ width: 100%;
 .product-card{
  cursor: pointer;
   transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform .4s ease;
  color: #324d67;
 
 }
 .product-card:hover{
-  transform: scale(1.1,1.1)
+  transform: scale(1.1,1.1);
 }
 .product-image{
   border-radius: 15px;
@@ -123,7 +123,7 @@ width: 100%;
   font-weight: 500;
 }
 .product-price{
-  font-weight: 800;
+  font-weight: 700;
   margin-top: 6px;
   color: black;
 }
