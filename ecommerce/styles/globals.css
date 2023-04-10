@@ -575,6 +575,7 @@ padding: 30px 65px;
 }
 .product-detail-desc p{
   margin-top: 10px;
+  text-align: justify;
 }
 .reviews p{
   color: #324d67;
