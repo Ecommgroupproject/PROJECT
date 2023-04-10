@@ -1,10 +1,12 @@
 import React from 'react';
 
 import { client } from '../lib/client';
-import { Product, FooterBanner, HeroBanner } from '../components';
+import { Product, FooterBanner, HeroBanner, SearchBar  } from '../components';
+
 
 const Home = ({ products, bannerData }) => (
   <div>
+    <SearchBar />
     <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
     <div className="products-heading">
       <h2>Best Selling Products</h2>
@@ -32,3 +34,4 @@ export const getServerSideProps = async () => {
 }
 
 export default Home;
+
