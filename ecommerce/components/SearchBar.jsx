@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import { useRouter } from 'next/router';
+import { toast } from 'react-hot-toast';
 
 const SearchBar = () => {
   const router = useRouter();
@@ -9,7 +10,8 @@ const SearchBar = () => {
     e.preventDefault();
   if (!query) {
     // display message or alert to user
-    alert('Please enter a Product to Search');
+    // alert('Please enter a Product to Search');
+    toast.error('Please enter a Product to Search');
     return;
   }
   router.push(`/search/${encodeURIComponent(query)}`);
