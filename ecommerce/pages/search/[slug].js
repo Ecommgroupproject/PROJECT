@@ -10,14 +10,14 @@ const SearchResults = ({ products, query }) => {
   if (!hasResults) {
     return (
       <div className="search-results">
-        <h2>No results found for "{query}"</h2>
+        <h2>No results found for `{query}`</h2>
       </div>
     );
   }
 
   return (
     <div className="search-results">
-      <h2>Search results for "{query}"</h2>
+      <h2>Search results for `{query}`</h2>
       <div className="products-container">
         {products?.map((product) => (
           <Product key={product._id} product={product} />
