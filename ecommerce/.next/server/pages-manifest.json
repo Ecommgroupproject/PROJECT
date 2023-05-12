@@ -1,11 +1,11 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/about": "pages/about.html",
-  "/api/hello": "pages/api/hello.js",
   "/api/stripe": "pages/api/stripe.js",
+  "/api/hello": "pages/api/hello.js",
   "/contactus": "pages/contactus.html",
+  "/_error": "pages/_error.js",
   "/success": "pages/success.html",
   "/": "pages/index.js",
   "/search/[slug]": "pages/search/[slug].js",

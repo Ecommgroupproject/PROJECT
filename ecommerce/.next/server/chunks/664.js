@@ -2,61 +2,6 @@ exports.id = 664;
 exports.ids = [664];
 exports.modules = {
 
-/***/ 2648:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-var __webpack_unused_export__;
-
-__webpack_unused_export__ = ({
-    value: true
-});
-Object.defineProperty(exports, "Z", ({
-    enumerable: true,
-    get: function() {
-        return _interopRequireDefault;
-    }
-}));
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-
-
-/***/ }),
-
-/***/ 7273:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-var __webpack_unused_export__;
-
-__webpack_unused_export__ = ({
-    value: true
-});
-Object.defineProperty(exports, "Z", ({
-    enumerable: true,
-    get: function() {
-        return _objectWithoutPropertiesLoose;
-    }
-}));
-function _objectWithoutPropertiesLoose(source, excluded) {
-    if (source == null) return {};
-    var target = {};
-    var sourceKeys = Object.keys(source);
-    var key, i;
-    for(i = 0; i < sourceKeys.length; i++){
-        key = sourceKeys[i];
-        if (excluded.indexOf(key) >= 0) continue;
-        target[key] = source[key];
-    }
-    return target;
-}
-
-
-/***/ }),
-
 /***/ 6085:
 /***/ ((module, exports, __webpack_require__) => {
 
@@ -66,18 +11,23 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.addBasePath = addBasePath;
+Object.defineProperty(exports, "addBasePath", ({
+  enumerable: true,
+  get: function () {
+    return addBasePath;
+  }
+}));
 
-var _addPathPrefix = __webpack_require__(1751);
+const _addpathprefix = __webpack_require__(1751);
 
-var _normalizeTrailingSlash = __webpack_require__(6962);
+const _normalizetrailingslash = __webpack_require__(6962);
 
-const basePath =  false || '';
+const basePath =  false || "";
 
 function addBasePath(path, required) {
   if (false) {}
 
-  return (0, _normalizeTrailingSlash).normalizePathTrailingSlash((0, _addPathPrefix).addPathPrefix(path, basePath));
+  return (0, _normalizetrailingslash.normalizePathTrailingSlash)((0, _addpathprefix.addPathPrefix)(path, basePath));
 }
 
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
@@ -99,17 +49,94 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.addLocale = void 0;
+Object.defineProperty(exports, "addLocale", ({
+  enumerable: true,
+  get: function () {
+    return addLocale;
+  }
+}));
 
-var _normalizeTrailingSlash = __webpack_require__(6962);
+const _normalizetrailingslash = __webpack_require__(6962);
 
-const addLocale = (path, ...args) => {
+const addLocale = function (path) {
+  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    args[_key - 1] = arguments[_key];
+  }
+
   if (false) {}
 
   return path;
 };
 
-exports.addLocale = addLocale;
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+  Object.defineProperty(exports.default, '__esModule', {
+    value: true
+  });
+  Object.assign(exports.default, exports);
+  module.exports = exports.default;
+}
+
+/***/ }),
+
+/***/ 2038:
+/***/ ((module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+0 && (0);
+
+function _export(target, all) {
+  for (var name in all) Object.defineProperty(target, name, {
+    enumerable: true,
+    get: all[name]
+  });
+}
+
+_export(exports, {
+  PrefetchKind: function () {
+    return PrefetchKind;
+  },
+  ACTION_REFRESH: function () {
+    return ACTION_REFRESH;
+  },
+  ACTION_NAVIGATE: function () {
+    return ACTION_NAVIGATE;
+  },
+  ACTION_RESTORE: function () {
+    return ACTION_RESTORE;
+  },
+  ACTION_SERVER_PATCH: function () {
+    return ACTION_SERVER_PATCH;
+  },
+  ACTION_PREFETCH: function () {
+    return ACTION_PREFETCH;
+  },
+  ACTION_FAST_REFRESH: function () {
+    return ACTION_FAST_REFRESH;
+  },
+  ACTION_SERVER_ACTION: function () {
+    return ACTION_SERVER_ACTION;
+  }
+});
+
+const ACTION_REFRESH = "refresh";
+const ACTION_NAVIGATE = "navigate";
+const ACTION_RESTORE = "restore";
+const ACTION_SERVER_PATCH = "server-patch";
+const ACTION_PREFETCH = "prefetch";
+const ACTION_FAST_REFRESH = "fast-refresh";
+const ACTION_SERVER_ACTION = "server-action";
+var PrefetchKind;
+
+(function (PrefetchKind) {
+  PrefetchKind["AUTO"] = "auto";
+  PrefetchKind["FULL"] = "full";
+  PrefetchKind["TEMPORARY"] = "temporary";
+})(PrefetchKind || (PrefetchKind = {}));
 
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
   Object.defineProperty(exports.default, '__esModule', {
@@ -130,8 +157,13 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.getDomainLocale = getDomainLocale;
-const basePath = (/* unused pure expression or super */ null && ( false || ''));
+Object.defineProperty(exports, "getDomainLocale", ({
+  enumerable: true,
+  get: function () {
+    return getDomainLocale;
+  }
+}));
+const basePath = (/* unused pure expression or super */ null && ( false || ""));
 
 function getDomainLocale(path, locale, locales, domainLocales) {
   if (false) {} else {
@@ -158,43 +190,48 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports["default"] = void 0;
+Object.defineProperty(exports, "default", ({
+  enumerable: true,
+  get: function () {
+    return _default;
+  }
+}));
 
-var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
+const _interop_require_default = __webpack_require__(167);
 
-var _object_without_properties_loose = (__webpack_require__(7273)/* ["default"] */ .Z);
+const _react = /*#__PURE__*/_interop_require_default._(__webpack_require__(6689));
 
-var _react = _interop_require_default(__webpack_require__(6689));
+const _resolvehref = __webpack_require__(7782);
 
-var _resolveHref = __webpack_require__(7782);
+const _islocalurl = __webpack_require__(1109);
 
-var _isLocalUrl = __webpack_require__(1109);
+const _formaturl = __webpack_require__(3938);
 
-var _formatUrl = __webpack_require__(3938);
+const _utils = __webpack_require__(9232);
 
-var _utils = __webpack_require__(9232);
+const _addlocale = __webpack_require__(4318);
 
-var _addLocale = __webpack_require__(4318);
+const _routercontext = __webpack_require__(4964);
 
-var _routerContext = __webpack_require__(4964);
+const _approutercontext = __webpack_require__(3280);
 
-var _appRouterContext = __webpack_require__(3280);
+const _useintersection = __webpack_require__(6675);
 
-var _useIntersection = __webpack_require__(6675);
+const _getdomainlocale = __webpack_require__(8693);
 
-var _getDomainLocale = __webpack_require__(8693);
+const _addbasepath = __webpack_require__(6085);
 
-var _addBasePath = __webpack_require__(6085);
+const _routerreducertypes = __webpack_require__(2038);
 
 const prefetched = new Set();
 
-function prefetch(router, href, as, options, isAppRouter) {
+function prefetch(router, href, as, options, appOptions, isAppRouter) {
   if (true) {
     return;
   } // app-router supports external urls out of the box so it shouldn't short-circuit here as support for e.g. `replace` is added in the app-router.
 
 
-  if (!isAppRouter && !(0, _isLocalUrl).isLocalURL(href)) {
+  if (!isAppRouter && !(0, _islocalurl.isLocalURL)(href)) {
     return;
   } // We should only dedupe requests when experimental.optimisticClientCache is
   // disabled.
@@ -202,8 +239,8 @@ function prefetch(router, href, as, options, isAppRouter) {
 
   if (!options.bypassPrefetchedCheck) {
     const locale = // Let the link's locale prop override the default router locale.
-    typeof options.locale !== 'undefined' ? options.locale : 'locale' in router ? router.locale : undefined;
-    const prefetchedKey = href + '%' + as + '%' + locale; // If we've already fetched the key, then don't prefetch it again!
+    typeof options.locale !== "undefined" ? options.locale : "locale" in router ? router.locale : undefined;
+    const prefetchedKey = href + "%" + as + "%" + locale; // If we've already fetched the key, then don't prefetch it again!
 
     if (prefetched.has(prefetchedKey)) {
       return;
@@ -211,21 +248,23 @@ function prefetch(router, href, as, options, isAppRouter) {
 
 
     prefetched.add(prefetchedKey);
-  } // Prefetch the JSON page if asked (only in the client)
+  }
+
+  const prefetchPromise = isAppRouter ? router.prefetch(href, appOptions) : router.prefetch(href, as, options); // Prefetch the JSON page if asked (only in the client)
   // We need to handle a prefetch error here since we may be
   // loading with priority which can reject but we don't
   // want to force navigation since this is only a prefetch
 
-
-  Promise.resolve(router.prefetch(href, as, options)).catch(err => {
+  Promise.resolve(prefetchPromise).catch(err => {
     if (false) {}
   });
 }
 
 function isModifiedEvent(event) {
   const eventTarget = event.currentTarget;
-  const target = eventTarget.getAttribute('target');
-  return target && target !== '_self' || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.nativeEvent && event.nativeEvent.which === 2;
+  const target = eventTarget.getAttribute("target");
+  return target && target !== "_self" || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || // triggers resource download
+  event.nativeEvent && event.nativeEvent.which === 2;
 }
 
 function linkClicked(e, router, href, as, replace, shallow, scroll, locale, isAppRouter, prefetchEnabled) {
@@ -233,10 +272,10 @@ function linkClicked(e, router, href, as, replace, shallow, scroll, locale, isAp
     nodeName
   } = e.currentTarget; // anchors inside an svg have a lowercase nodeName
 
-  const isAnchorNodeName = nodeName.toUpperCase() === 'A';
+  const isAnchorNodeName = nodeName.toUpperCase() === "A";
 
   if (isAnchorNodeName && (isModifiedEvent(e) || // app-router supports external urls out of the box so it shouldn't short-circuit here as support for e.g. `replace` is added in the app-router.
-  !isAppRouter && !(0, _isLocalUrl).isLocalURL(href))) {
+  !isAppRouter && !(0, _islocalurl.isLocalURL)(href))) {
     // ignore click for browser’s default behavior
     return;
   }
@@ -245,21 +284,20 @@ function linkClicked(e, router, href, as, replace, shallow, scroll, locale, isAp
 
   const navigate = () => {
     // If the router is an NextRouter instance it will have `beforePopState`
-    if ('beforePopState' in router) {
-      router[replace ? 'replace' : 'push'](href, as, {
+    if ("beforePopState" in router) {
+      router[replace ? "replace" : "push"](href, as, {
         shallow,
         locale,
         scroll
       });
     } else {
-      router[replace ? 'replace' : 'push'](as || href, {
+      router[replace ? "replace" : "push"](as || href, {
         forceOptimisticNavigation: !prefetchEnabled
       });
     }
   };
 
   if (isAppRouter) {
-    // @ts-expect-error startTransition exists.
     _react.default.startTransition(navigate);
   } else {
     navigate();
@@ -267,11 +305,11 @@ function linkClicked(e, router, href, as, replace, shallow, scroll, locale, isAp
 }
 
 function formatStringOrUrl(urlObjOrString) {
-  if (typeof urlObjOrString === 'string') {
+  if (typeof urlObjOrString === "string") {
     return urlObjOrString;
   }
 
-  return (0, _formatUrl).formatUrl(urlObjOrString);
+  return (0, _formaturl.formatUrl)(urlObjOrString);
 }
 /**
  * React Component that enables client-side transitions between routes.
@@ -279,15 +317,12 @@ function formatStringOrUrl(urlObjOrString) {
 
 
 const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props, forwardedRef) {
-  if (false) { var createPropError; }
-
   let children;
-
   const {
     href: hrefProp,
     as: asProp,
     children: childrenProp,
-    prefetch: prefetchProp,
+    prefetch: prefetchProp = null,
     passHref,
     replace,
     shallow,
@@ -297,25 +332,34 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
     onMouseEnter: onMouseEnterProp,
     onTouchStart: onTouchStartProp,
     // @ts-expect-error this is inlined as a literal boolean not a string
-    legacyBehavior = true === false
-  } = props,
-        restProps = _object_without_properties_loose(props, ["href", "as", "children", "prefetch", "passHref", "replace", "shallow", "scroll", "locale", "onClick", "onMouseEnter", "onTouchStart", "legacyBehavior"]);
-
+    legacyBehavior = true === false,
+    ...restProps
+  } = props;
   children = childrenProp;
 
-  if (legacyBehavior && (typeof children === 'string' || typeof children === 'number')) {
+  if (legacyBehavior && (typeof children === "string" || typeof children === "number")) {
     children = /*#__PURE__*/_react.default.createElement("a", null, children);
   }
 
   const prefetchEnabled = prefetchProp !== false;
+  /**
+   * The possible states for prefetch are:
+   * - null: this is the default "auto" mode, where we will prefetch partially if the link is in the viewport
+   * - true: we will prefetch if the link is visible and prefetch the full page, not just partially
+   * - false: we will not prefetch if in the viewport at all
+   */
 
-  const pagesRouter = _react.default.useContext(_routerContext.RouterContext);
+  const appPrefetchKind = prefetchProp === null ? _routerreducertypes.PrefetchKind.AUTO : _routerreducertypes.PrefetchKind.FULL;
 
-  const appRouter = _react.default.useContext(_appRouterContext.AppRouterContext);
+  const pagesRouter = _react.default.useContext(_routercontext.RouterContext);
+
+  const appRouter = _react.default.useContext(_approutercontext.AppRouterContext);
 
   const router = pagesRouter != null ? pagesRouter : appRouter; // We're in the app directory if there is no pages router.
 
   const isAppRouter = !pagesRouter;
+
+  if (false) { var createPropError; }
 
   if (false) {}
 
@@ -331,10 +375,10 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
       };
     }
 
-    const [resolvedHref, resolvedAs] = (0, _resolveHref).resolveHref(pagesRouter, hrefProp, true);
+    const [resolvedHref, resolvedAs] = (0, _resolvehref.resolveHref)(pagesRouter, hrefProp, true);
     return {
       href: resolvedHref,
-      as: asProp ? (0, _resolveHref).resolveHref(pagesRouter, asProp) : resolvedAs || resolvedHref
+      as: asProp ? (0, _resolvehref.resolveHref)(pagesRouter, asProp) : resolvedAs || resolvedHref
     };
   }, [pagesRouter, hrefProp, asProp]);
 
@@ -350,12 +394,12 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
       child = _react.default.Children.only(children);
     }
   } else {
-    if (false) { var ref; }
+    if (false) {}
   }
 
-  const childRef = legacyBehavior ? child && typeof child === 'object' && child.ref : forwardedRef;
-  const [setIntersectionRef, isVisible, resetVisible] = (0, _useIntersection).useIntersection({
-    rootMargin: '200px'
+  const childRef = legacyBehavior ? child && typeof child === "object" && child.ref : forwardedRef;
+  const [setIntersectionRef, isVisible, resetVisible] = (0, _useintersection.useIntersection)({
+    rootMargin: "200px"
   });
 
   const setRef = _react.default.useCallback(el => {
@@ -369,7 +413,7 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
     setIntersectionRef(el);
 
     if (childRef) {
-      if (typeof childRef === 'function') childRef(el);else if (typeof childRef === 'object') {
+      if (typeof childRef === "function") childRef(el);else if (typeof childRef === "object") {
         childRef.current = el;
       }
     }
@@ -392,8 +436,10 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
 
     prefetch(router, href, as, {
       locale
+    }, {
+      kind: appPrefetchKind
     }, isAppRouter);
-  }, [as, href, isVisible, locale, prefetchEnabled, pagesRouter == null ? void 0 : pagesRouter.locale, router, isAppRouter]);
+  }, [as, href, isVisible, locale, prefetchEnabled, pagesRouter == null ? void 0 : pagesRouter.locale, router, isAppRouter, appPrefetchKind]);
 
   const childProps = {
     ref: setRef,
@@ -401,11 +447,11 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
     onClick(e) {
       if (false) {}
 
-      if (!legacyBehavior && typeof onClick === 'function') {
+      if (!legacyBehavior && typeof onClick === "function") {
         onClick(e);
       }
 
-      if (legacyBehavior && child.props && typeof child.props.onClick === 'function') {
+      if (legacyBehavior && child.props && typeof child.props.onClick === "function") {
         child.props.onClick(e);
       }
 
@@ -421,11 +467,11 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
     },
 
     onMouseEnter(e) {
-      if (!legacyBehavior && typeof onMouseEnterProp === 'function') {
+      if (!legacyBehavior && typeof onMouseEnterProp === "function") {
         onMouseEnterProp(e);
       }
 
-      if (legacyBehavior && child.props && typeof child.props.onMouseEnter === 'function') {
+      if (legacyBehavior && child.props && typeof child.props.onMouseEnter === "function") {
         child.props.onMouseEnter(e);
       }
 
@@ -442,15 +488,17 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
         priority: true,
         // @see {https://github.com/vercel/next.js/discussions/40268?sort=top#discussioncomment-3572642}
         bypassPrefetchedCheck: true
+      }, {
+        kind: appPrefetchKind
       }, isAppRouter);
     },
 
     onTouchStart(e) {
-      if (!legacyBehavior && typeof onTouchStartProp === 'function') {
+      if (!legacyBehavior && typeof onTouchStartProp === "function") {
         onTouchStartProp(e);
       }
 
-      if (legacyBehavior && child.props && typeof child.props.onTouchStart === 'function') {
+      if (legacyBehavior && child.props && typeof child.props.onTouchStart === "function") {
         child.props.onTouchStart(e);
       }
 
@@ -467,6 +515,8 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
         priority: true,
         // @see {https://github.com/vercel/next.js/discussions/40268?sort=top#discussioncomment-3572642}
         bypassPrefetchedCheck: true
+      }, {
+        kind: appPrefetchKind
       }, isAppRouter);
     }
 
@@ -474,21 +524,22 @@ const Link = /*#__PURE__*/_react.default.forwardRef(function LinkComponent(props
   // defined, we specify the current 'href', so that repetition is not needed by the user.
   // If the url is absolute, we can bypass the logic to prepend the domain and locale.
 
-  if ((0, _utils).isAbsoluteUrl(as)) {
+  if ((0, _utils.isAbsoluteUrl)(as)) {
     childProps.href = as;
-  } else if (!legacyBehavior || passHref || child.type === 'a' && !('href' in child.props)) {
-    const curLocale = typeof locale !== 'undefined' ? locale : pagesRouter == null ? void 0 : pagesRouter.locale; // we only render domain locales if we are currently on a domain locale
+  } else if (!legacyBehavior || passHref || child.type === "a" && !("href" in child.props)) {
+    const curLocale = typeof locale !== "undefined" ? locale : pagesRouter == null ? void 0 : pagesRouter.locale; // we only render domain locales if we are currently on a domain locale
     // so that locale links are still visitable in development/preview envs
 
-    const localeDomain = (pagesRouter == null ? void 0 : pagesRouter.isLocaleDomain) && (0, _getDomainLocale).getDomainLocale(as, curLocale, pagesRouter == null ? void 0 : pagesRouter.locales, pagesRouter == null ? void 0 : pagesRouter.domainLocales);
-    childProps.href = localeDomain || (0, _addBasePath).addBasePath((0, _addLocale).addLocale(as, curLocale, pagesRouter == null ? void 0 : pagesRouter.defaultLocale));
+    const localeDomain = (pagesRouter == null ? void 0 : pagesRouter.isLocaleDomain) && (0, _getdomainlocale.getDomainLocale)(as, curLocale, pagesRouter == null ? void 0 : pagesRouter.locales, pagesRouter == null ? void 0 : pagesRouter.domainLocales);
+    childProps.href = localeDomain || (0, _addbasepath.addBasePath)((0, _addlocale.addLocale)(as, curLocale, pagesRouter == null ? void 0 : pagesRouter.defaultLocale));
   }
 
-  return legacyBehavior ? /*#__PURE__*/_react.default.cloneElement(child, childProps) : /*#__PURE__*/_react.default.createElement("a", Object.assign({}, restProps, childProps), children);
+  return legacyBehavior ? /*#__PURE__*/_react.default.cloneElement(child, childProps) : /*#__PURE__*/_react.default.createElement("a", { ...restProps,
+    ...childProps
+  }, children);
 });
 
-var _default = Link;
-exports["default"] = _default;
+const _default = Link;
 
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
   Object.defineProperty(exports.default, '__esModule', {
@@ -509,14 +560,19 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.normalizePathTrailingSlash = void 0;
+Object.defineProperty(exports, "normalizePathTrailingSlash", ({
+  enumerable: true,
+  get: function () {
+    return normalizePathTrailingSlash;
+  }
+}));
 
-var _removeTrailingSlash = __webpack_require__(3297);
+const _removetrailingslash = __webpack_require__(3297);
 
-var _parsePath = __webpack_require__(8854);
+const _parsepath = __webpack_require__(8854);
 
 const normalizePathTrailingSlash = path => {
-  if (!path.startsWith('/') || undefined) {
+  if (!path.startsWith("/") || undefined) {
     return path;
   }
 
@@ -524,14 +580,12 @@ const normalizePathTrailingSlash = path => {
     pathname,
     query,
     hash
-  } = (0, _parsePath).parsePath(path);
+  } = (0, _parsepath.parsePath)(path);
 
   if (false) {}
 
-  return `${(0, _removeTrailingSlash).removeTrailingSlash(pathname)}${query}${hash}`;
+  return "" + (0, _removetrailingslash.removeTrailingSlash)(pathname) + query + hash;
 };
-
-exports.normalizePathTrailingSlash = normalizePathTrailingSlash;
 
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
   Object.defineProperty(exports.default, '__esModule', {
@@ -552,9 +606,25 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.cancelIdleCallback = exports.requestIdleCallback = void 0;
+0 && (0);
 
-const requestIdleCallback = typeof self !== 'undefined' && self.requestIdleCallback && self.requestIdleCallback.bind(window) || function (cb) {
+function _export(target, all) {
+  for (var name in all) Object.defineProperty(target, name, {
+    enumerable: true,
+    get: all[name]
+  });
+}
+
+_export(exports, {
+  requestIdleCallback: function () {
+    return requestIdleCallback;
+  },
+  cancelIdleCallback: function () {
+    return cancelIdleCallback;
+  }
+});
+
+const requestIdleCallback = typeof self !== "undefined" && self.requestIdleCallback && self.requestIdleCallback.bind(window) || function (cb) {
   let start = Date.now();
   return self.setTimeout(function () {
     cb({
@@ -566,13 +636,9 @@ const requestIdleCallback = typeof self !== 'undefined' && self.requestIdleCallb
   }, 1);
 };
 
-exports.requestIdleCallback = requestIdleCallback;
-
-const cancelIdleCallback = typeof self !== 'undefined' && self.cancelIdleCallback && self.cancelIdleCallback.bind(window) || function (id) {
+const cancelIdleCallback = typeof self !== "undefined" && self.cancelIdleCallback && self.cancelIdleCallback.bind(window) || function (id) {
   return clearTimeout(id);
 };
-
-exports.cancelIdleCallback = cancelIdleCallback;
 
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
   Object.defineProperty(exports.default, '__esModule', {
@@ -593,20 +659,25 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.useIntersection = useIntersection;
+Object.defineProperty(exports, "useIntersection", ({
+  enumerable: true,
+  get: function () {
+    return useIntersection;
+  }
+}));
 
-var _react = __webpack_require__(6689);
+const _react = __webpack_require__(6689);
 
-var _requestIdleCallback = __webpack_require__(6682);
+const _requestidlecallback = __webpack_require__(6682);
 
-const hasIntersectionObserver = typeof IntersectionObserver === 'function';
+const hasIntersectionObserver = typeof IntersectionObserver === "function";
 const observers = new Map();
 const idList = [];
 
 function createObserver(options) {
   const id = {
     root: options.root || null,
-    margin: options.rootMargin || ''
+    margin: options.rootMargin || ""
   };
   const existing = idList.find(obj => obj.root === id.root && obj.margin === id.margin);
   let instance;
@@ -664,18 +735,19 @@ function observe(element, callback, options) {
   };
 }
 
-function useIntersection({
-  rootRef,
-  rootMargin,
-  disabled
-}) {
+function useIntersection(param) {
+  let {
+    rootRef,
+    rootMargin,
+    disabled
+  } = param;
   const isDisabled = disabled || !hasIntersectionObserver;
-  const [visible, setVisible] = (0, _react).useState(false);
-  const elementRef = (0, _react).useRef(null);
-  const setElement = (0, _react).useCallback(element => {
+  const [visible, setVisible] = (0, _react.useState)(false);
+  const elementRef = (0, _react.useRef)(null);
+  const setElement = (0, _react.useCallback)(element => {
     elementRef.current = element;
   }, []);
-  (0, _react).useEffect(() => {
+  (0, _react.useEffect)(() => {
     if (hasIntersectionObserver) {
       if (isDisabled || visible) return;
       const element = elementRef.current;
@@ -689,13 +761,13 @@ function useIntersection({
       }
     } else {
       if (!visible) {
-        const idleCallback = (0, _requestIdleCallback).requestIdleCallback(() => setVisible(true));
-        return () => (0, _requestIdleCallback).cancelIdleCallback(idleCallback);
+        const idleCallback = (0, _requestidlecallback.requestIdleCallback)(() => setVisible(true));
+        return () => (0, _requestidlecallback.cancelIdleCallback)(idleCallback);
       }
     } // eslint-disable-next-line react-hooks/exhaustive-deps
 
   }, [isDisabled, rootMargin, rootRef, visible, elementRef.current]);
-  const resetVisible = (0, _react).useCallback(() => {
+  const resetVisible = (0, _react.useCallback)(() => {
     setVisible(false);
   }, []);
   return [setElement, visible, resetVisible];
@@ -715,6 +787,20 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__(6512)
+
+
+/***/ }),
+
+/***/ 167:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+exports._ = exports._interop_require_default = _interop_require_default;
+function _interop_require_default(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
 
 
 /***/ })
