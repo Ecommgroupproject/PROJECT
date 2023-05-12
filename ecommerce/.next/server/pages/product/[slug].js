@@ -22,8 +22,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2773);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7019);
 /* harmony import */ var _context_StateContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8140);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_client__WEBPACK_IMPORTED_MODULE_2__, _components__WEBPACK_IMPORTED_MODULE_3__, _context_StateContext__WEBPACK_IMPORTED_MODULE_4__]);
-([_lib_client__WEBPACK_IMPORTED_MODULE_2__, _components__WEBPACK_IMPORTED_MODULE_3__, _context_StateContext__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components__WEBPACK_IMPORTED_MODULE_3__, _context_StateContext__WEBPACK_IMPORTED_MODULE_4__]);
+([_components__WEBPACK_IMPORTED_MODULE_3__, _context_StateContext__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 
 
@@ -149,6 +149,13 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 1097:
+/***/ ((module) => {
+
+module.exports = require("@sanity/client");
+
+/***/ }),
+
 /***/ 1791:
 /***/ ((module) => {
 
@@ -258,13 +265,6 @@ module.exports = require("react-icons/ai");
 /***/ ((module) => {
 
 module.exports = require("react-icons/ti");
-
-/***/ }),
-
-/***/ 680:
-/***/ ((module) => {
-
-module.exports = import("@sanity/client");;
 
 /***/ }),
 

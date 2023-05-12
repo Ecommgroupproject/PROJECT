@@ -15,6 +15,7 @@ const SearchResults = ({ products, query }) => {
     );
   }
 
+
   return (
     <div className="search-results">
       <h2>Search results for `{query}`</h2>

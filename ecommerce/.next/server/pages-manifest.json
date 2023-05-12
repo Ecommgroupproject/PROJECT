@@ -1,12 +1,14 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/about": "pages/about.html",
   "/api/hello": "pages/api/hello.js",
   "/api/stripe": "pages/api/stripe.js",
+  "/contactus": "pages/contactus.html",
   "/success": "pages/success.html",
-  "/_error": "pages/_error.js",
-  "/search/[slug]": "pages/search/[slug].js",
   "/": "pages/index.js",
+  "/search/[slug]": "pages/search/[slug].js",
   "/product/[slug]": "pages/product/[slug].js",
   "/404": "pages/404.html"
 }

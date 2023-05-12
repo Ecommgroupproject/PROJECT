@@ -5,26 +5,23 @@ exports.id = 475;
 exports.ids = [475];
 exports.modules = {
 
-/***/ 6090:
-/***/ ((module) => {
+/***/ 5853:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-module.exports = import("stripe");;
-
-/***/ }),
-
-/***/ 1391:
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ handler)
-/* harmony export */ });
-/* harmony import */ var stripe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6090);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([stripe__WEBPACK_IMPORTED_MODULE_0__]);
-stripe__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
-const stripe = new stripe__WEBPACK_IMPORTED_MODULE_0__["default"]("sk_test_51MyuznSFbzOUSF2VBmMj6k1eXlsFKXbvOiNopOD0PDIkWRL2Zkvu9VFiMTU1NjjTY9iiFoB6aIybgulG0f2kkiJz00g6mgBGFr");
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ handler)
+});
+
+;// CONCATENATED MODULE: external "stripe"
+const external_stripe_namespaceObject = require("stripe");
+var external_stripe_default = /*#__PURE__*/__webpack_require__.n(external_stripe_namespaceObject);
+;// CONCATENATED MODULE: ./pages/api/stripe.js
+
+const stripe = new (external_stripe_default())("sk_test_51MyuznSFbzOUSF2VBmMj6k1eXlsFKXbvOiNopOD0PDIkWRL2Zkvu9VFiMTU1NjjTY9iiFoB6aIybgulG0f2kkiJz00g6mgBGFr");
 async function handler(req, res) {
   if (req.method === 'POST') {
     try {
@@ -71,8 +68,6 @@ async function handler(req, res) {
     res.status(405).end('Method Not Allowed');
   }
 }
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
 
 /***/ })
 
@@ -83,7 +78,7 @@ __webpack_async_result__();
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(1391));
+var __webpack_exports__ = (__webpack_exec__(5853));
 module.exports = __webpack_exports__;
 
 })();

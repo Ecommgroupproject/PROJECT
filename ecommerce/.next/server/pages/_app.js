@@ -48,6 +48,14 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 1097:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@sanity/client");
+
+/***/ }),
+
 /***/ 1791:
 /***/ ((module) => {
 
@@ -173,14 +181,6 @@ module.exports = require("react-icons/ai");
 
 "use strict";
 module.exports = require("react-icons/ti");
-
-/***/ }),
-
-/***/ 680:
-/***/ ((module) => {
-
-"use strict";
-module.exports = import("@sanity/client");;
 
 /***/ }),
 

@@ -1,20 +1,14 @@
 {
-  "..\\node_modules\\@sanity\\client\\dist\\index.browser.js -> @sanity/eventsource": {
-    "id": 3699,
-    "files": [
-      "static/chunks/699.5ee0d4dfe2169468.js"
-    ]
-  },
   "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
     "id": 1249,
     "files": [
-      "static/chunks/249.6e603dfbc6e16b49.js"
+      "static/chunks/249.fb71302bd857a24f.js"
     ]
   },
   "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
     "id": 6698,
     "files": [
-      "static/chunks/698.65f403215092f02b.js"
+      "static/chunks/698.b96a5dd2cfdf12ec.js"
     ]
   }
 }
