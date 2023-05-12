@@ -160,7 +160,7 @@ padding:15px;
   transform: scale(1.1,1.1);
 }
 .navbar-container{
-  display: flex;
+  display: absolute;
   justify-content: space-between;
   margin: 0px 0px;
   position: relative;
